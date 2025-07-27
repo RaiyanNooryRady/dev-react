@@ -8,10 +8,10 @@ import CarEs6 from './Es6.jsx'
 function App() {
 
   return (
-    <>
+    <div className="container mt-5">
     <h1 className='text-danger'>React Dev</h1>
     <CarEs6 />
-    </>
+    </div>
   )
 }
 
