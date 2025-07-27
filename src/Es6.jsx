@@ -17,6 +17,9 @@ class Model extends Car {
   show() {
     return this.present() + 'Model name is: ' + this.mod;
   }
+  hello=()=>{
+    return 'Hello ES6 learner!';
+  }
 }
 
 const myCar = new Model('Volvo', 'X6');
@@ -25,7 +28,7 @@ function CarEs6(){
   return (
     <div>
       <h2 className='text-success'>{myCar.show()}</h2>
-      <h2>Hello world</h2>
+      <h2>{myCar.hello()}</h2>
     </div>
   );
 }
