@@ -21,7 +21,8 @@ function App() {
     <div className="container mt-5">
     <h1 className='text-danger'>React Dev</h1>
     <CarEs6 />
-    <Events />
+    <Events occation="Birthday" />
+    <Events occation="Marriage" />
     </div>
   )
 }
