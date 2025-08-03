@@ -25,12 +25,15 @@ const Learn = () => {
     }
     return (
         <>
-            <h1>Welcome to the learning page</h1>
-            <CarEs6 />
-            <Events occation="Birthday" date="2025-08-01" />
-            <Events occation="Marriage" date="2025-08-05" />
-            <Employee person={person} />
-            <Destructuring person={person} />
+            <div className="container my-5">
+                <h1>Welcome to the learning page</h1>
+                <CarEs6 />
+                <Events occation="Birthday" date="2025-08-01" />
+                <Events occation="Marriage" date="2025-08-05" />
+                <Employee person={person} />
+                <Destructuring person={person} />
+            </div>
+
         </>
     );
 }
