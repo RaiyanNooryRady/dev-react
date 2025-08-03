@@ -1,7 +1,7 @@
 const showAlert = (valAlert) =>{
     alert(valAlert);
 }
-function Events() {
+const Events= () => {
     return (
         <div className="dev-events">
             <h1 className='text-danger'>Events in React</h1>
