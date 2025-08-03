@@ -2,6 +2,7 @@ import CarEs6 from '../learn-items/Es6.jsx'
 import Events from '../learn-items/Events.jsx'
 import Employee from '../learn-items/Destructuring.jsx'
 import { Destructuring } from '../learn-items/Destructuring.jsx'
+import UseState from '../learn-items/Use-state.jsx'
 const Learn = () => {
     const person = {
         name: "raiyan",
@@ -32,6 +33,7 @@ const Learn = () => {
                 <Events occation="Marriage" date="2025-08-05" />
                 <Employee person={person} />
                 <Destructuring person={person} />
+                <UseState />
             </div>
 
         </>
