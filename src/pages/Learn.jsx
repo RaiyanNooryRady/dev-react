@@ -4,6 +4,7 @@ import Employee from '../learn-items/Destructuring.jsx'
 import { Destructuring } from '../learn-items/Destructuring.jsx'
 import UseState from '../learn-items/Use-state.jsx'
 import UseEffectTimer from '../learn-items/Use-effect.jsx'
+import UseContextExample from '../learn-items/Use-context.jsx'
 const Learn = () => {
     const person = {
         name: "raiyan",
@@ -36,6 +37,7 @@ const Learn = () => {
                 <Destructuring person={person} />
                 <UseState />
                 <UseEffectTimer />
+                <UseContextExample />
             </div>
 
         </>
