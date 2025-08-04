@@ -5,6 +5,7 @@ import { Destructuring } from '../learn-items/Destructuring.jsx'
 import UseState from '../learn-items/Use-state.jsx'
 import UseEffectTimer from '../learn-items/Use-effect.jsx'
 import UseContextExample from '../learn-items/Use-context.jsx'
+import UseRefExample from '../learn-items/Use-ref.jsx'
 const Learn = () => {
     const person = {
         name: "raiyan",
@@ -38,6 +39,7 @@ const Learn = () => {
                 <UseState />
                 <UseEffectTimer />
                 <UseContextExample />
+                <UseRefExample />
             </div>
 
         </>
