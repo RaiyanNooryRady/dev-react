@@ -9,6 +9,7 @@ import UseRefExample from '../learn-items/Use-ref.jsx'
 import UseReducerExample from '../learn-items/Use-reducer.jsx'
 import Counter from '../learn-items/Use-reducer2.jsx'
 import UseCallbackExample from '../learn-items/Use-callback.jsx'
+import ListGroup from '../learn-items/ListGroup.jsx'
 const Learn = () => {
     const person = {
         name: "raiyan",
@@ -46,6 +47,7 @@ const Learn = () => {
                 <UseReducerExample />
                 <Counter />
                 <UseCallbackExample />
+                <ListGroup />
             </div>
 
         </>
