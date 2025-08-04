@@ -7,6 +7,7 @@ import UseEffectTimer from '../learn-items/Use-effect.jsx'
 import UseContextExample from '../learn-items/Use-context.jsx'
 import UseRefExample from '../learn-items/Use-ref.jsx'
 import UseReducerExample from '../learn-items/Use-reducer.jsx'
+import Counter from '../learn-items/Use-reducer2.jsx'
 const Learn = () => {
     const person = {
         name: "raiyan",
@@ -42,6 +43,7 @@ const Learn = () => {
                 <UseContextExample />
                 <UseRefExample />
                 <UseReducerExample />
+                <Counter />
             </div>
 
         </>
