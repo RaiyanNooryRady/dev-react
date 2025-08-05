@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
-const ListGroup = (props: { items: string[], heading: string }) => {
-    let items = props.items;
-    let heading = props.heading;
+const ListGroup = ({ items, heading }) => {
     //items = [];
     const [selectedIndex, setSelectedIndex] = useState(-1);    
     // You can use if statements here, outside the return
