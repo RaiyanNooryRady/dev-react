@@ -31,6 +31,8 @@ const Learn = () => {
         },
         skills: ["React", "Node.js", "JavaScript"]
     }
+    let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
+    let colors=["red", "blue", "green", "yellow", "purple"];
     return (
         <>
             <div className="container my-5">
@@ -47,7 +49,8 @@ const Learn = () => {
                 <UseReducerExample />
                 <Counter />
                 <UseCallbackExample />
-                <ListGroup />
+                <ListGroup items={items} heading="Cities" />
+                <ListGroup items={colors} heading="Colors" />
             </div>
 
         </>
