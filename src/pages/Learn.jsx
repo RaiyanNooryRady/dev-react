@@ -33,6 +33,9 @@ const Learn = () => {
     }
     let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
     let colors=["red", "blue", "green", "yellow", "purple"];
+    const handleSelectItem = (item) => {
+        console.log(item);
+    }
     return (
         <>
             <div className="container my-5">
@@ -49,8 +52,8 @@ const Learn = () => {
                 <UseReducerExample />
                 <Counter />
                 <UseCallbackExample />
-                <ListGroup items={items} heading="Cities" />
-                <ListGroup items={colors} heading="Colors" />
+                <ListGroup items={items} heading="Cities" onSelectItem={handleSelectItem} />
+                <ListGroup items={colors} heading="Colors" onSelectItem={handleSelectItem} />
             </div>
 
         </>

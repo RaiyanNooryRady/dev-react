@@ -1,6 +1,11 @@
 import React from "react";
 import { useState } from "react";
-const ListGroup = ({ items, heading }) => {
+interface Props {
+    items: string[];
+    heading: string;
+    onSelectItem: (item: string) => void;
+}
+const ListGroup = ({ items, heading, onSelectItem }: Props) => {
     //items = [];
     const [selectedIndex, setSelectedIndex] = useState(-1);    
     // You can use if statements here, outside the return
@@ -13,7 +18,8 @@ const ListGroup = ({ items, heading }) => {
             <li
                 key={item}
                 className={selectedIndex === index ? "list-group-item active cursor-pointer" : "list-group-item cursor-pointer"}
-                onClick={() => setSelectedIndex(index)}>
+                onClick={() => 
+                {setSelectedIndex(index); onSelectItem(item)}}>
                 {index} {item}
             </li>
         )
