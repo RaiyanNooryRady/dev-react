@@ -2,22 +2,18 @@
 
 const ListGroup = () => {
     let items = ["New York", "San Francisco", "Tokyo", "London", "Paris"];
-   // items = [];
+    // items = [];
     // You can use if statements here, outside the return
-
-
+    const message = items.length === 0 ? <p>No items found</p> : null;
+    const showItems = items.map((item) => {
+        return <li key={item} className="list-group-item" onClick={() => console.log(item)}>{item}</li>
+    })
     return (
         <>
             <h1>List</h1>
-            {
-                items.length === 0 ? <p>No items found</p> : null
-            }
+            {message}
             <ul className="list-group">
-                {
-                    items.map((item) => {
-                        return <li key={item} className="list-group-item" onClick={() => console.log(item)}>{item}</li>
-                    })
-                }
+                {showItems}
             </ul>
         </>
     );
