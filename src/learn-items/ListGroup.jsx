@@ -8,7 +8,7 @@ const ListGroup = () => {
             <ul className="list-group">
                 {
                     items.map((item)=>{
-                        return <li className="list-group-item">{item}</li>
+                        return <li key={item} className="list-group-item">{item}</li>
                     })
                 }
                 
